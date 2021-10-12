@@ -1,0 +1,31 @@
+{
+  "name": "cypress-workshop-chaptertime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress --headless",
+    "test:open": "cypress open",
+    "lint": "eslint .",
+    "format": "npm run lint -- --fix",
+    "start": "wds --node-resolve --open -p 8081 --root-dir . --watch=true"
+  },
+  "author": "Fernando Carrascosa Bernal <fcarrascosa@fcarrascosa.es>",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.25",
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "cypress-dark": "^1.8.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "lit": "^2.0.2",
+    "lit-html": "^2.0.1"
+  }
+}
